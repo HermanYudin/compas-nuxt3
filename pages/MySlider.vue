@@ -1,5 +1,5 @@
 <template>
-  <section class="slider" id="slider">
+  <section class="slider" id="slider" >
     <MySectionTitle class="slider-title" :sectionTitle="'Документы'" />
     <Swiper
       :pagination="{
@@ -103,7 +103,7 @@ const sliderItems = [
 
 <style lang="scss" scoped>
 .slider {
-  margin-left: -39px;
+  margin-left: 13px;
   padding-bottom: 100px;
 }
 
@@ -112,7 +112,6 @@ const sliderItems = [
   padding-top: 14px;
   padding-left: 32px;
   max-width: 1147px;
-  margin-left: 56px;
 }
 
 .swiper-wrapper {

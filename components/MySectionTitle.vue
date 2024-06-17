@@ -27,7 +27,7 @@ defineProps({
 }
 
 .slider-title {
-  margin-left: 113px;
+  margin-left: 63px;
   margin-top: 31px;
   margin-bottom: 28px;
 }

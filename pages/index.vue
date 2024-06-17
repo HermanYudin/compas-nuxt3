@@ -98,6 +98,7 @@ const pluses = [
   border-radius: 10px;
 }
 
+
 @media (max-width: 1200px) {
   .hero {
     flex-wrap: wrap;
