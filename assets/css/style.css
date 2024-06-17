@@ -1,0 +1,101 @@
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+  --c-blue: #0584fe;
+  --c-gray: #bcbcbc;
+  --c-red: #ec1e1e;
+  --c-lightgray: #eeeff1;
+  --c-arrows: #a6b7d4;
+  --f-PTSans: "PTSans", sans-serif;
+}
+
+@font-face {
+  src: url("~/fonts/PTSans-Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PTSans";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  scrollbar-gutter: stable;
+  padding: 0;
+  font-family: var(--f-PTSans);
+  overflow-x: hidden;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(73, 73, 73, 0.3);
+  opacity: 0;
+  transition: z-index 0.001s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.swiper-wrapper {
+  padding-bottom: 41px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullets {
+  left: 10px !important;
+}
+
+.swiper-button-next {
+  top: 47% !important;
+  right: 0px !important;
+  height: 80px !important;
+  width: 40px !important;
+  border-radius: 150px 0 0 150px !important;
+  background-color: var(--c-arrows) !important;
+  opacity: 0.5 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.swiper-button-prev {
+  top: 47% !important;
+  left: 0px !important;
+  height: 80px !important;
+  width: 40px !important;
+  border-radius: 0 150px 150px 0 !important;
+  background-color: var(--c-arrows) !important;
+  opacity: 0.5 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--c-blue) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--c-white) !important;
+  font-size: 25px !important;
+  margin-left: 12px;
+  z-index: 10;
+}
+
+.swiper-button-prev:after {
+  margin-right: 25px;
+}
